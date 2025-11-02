@@ -1,0 +1,62 @@
+{
+    "trial_30": {
+        "n_estimators": 108,
+        "max_depth": 9,
+        "learning_rate": 0.183621221848172,
+        "subsample": 0.9635279820364382,
+        "colsample_bytree": 0.5033227017272268,
+        "gamma": 0.0883500827083652,
+        "reg_alpha": 0.06949337051964777,
+        "reg_lambda": 0.12850143972213823
+    },
+    "trial_60": {
+        "n_estimators": 152,
+        "max_depth": 6,
+        "learning_rate": 0.033925517590841434,
+        "subsample": 0.7319186052456341,
+        "colsample_bytree": 0.5553433907830194,
+        "gamma": 0.39019290124878747,
+        "reg_alpha": 0.1082139563651161,
+        "reg_lambda": 0.4240356179313982
+    },
+    "trial_90": {
+        "n_estimators": 132,
+        "max_depth": 8,
+        "learning_rate": 0.17854191216974008,
+        "subsample": 0.7692885908380697,
+        "colsample_bytree": 0.6889441381004836,
+        "gamma": 0.4884125000472699,
+        "reg_alpha": 0.3560018276039497,
+        "reg_lambda": 1.8049949027045837
+    },
+    "trial_120": {
+        "n_estimators": 227,
+        "max_depth": 10,
+        "learning_rate": 0.05318415079396446,
+        "subsample": 0.7423766635472455,
+        "colsample_bytree": 0.9492239506303387,
+        "gamma": 1.2748738712457879,
+        "reg_alpha": 3.4555063847146332,
+        "reg_lambda": 0.6071293089678119
+    },
+    "trial_150": {
+        "n_estimators": 59,
+        "max_depth": 9,
+        "learning_rate": 0.2396744726583757,
+        "subsample": 0.6260984361488504,
+        "colsample_bytree": 0.7546401687703049,
+        "gamma": 0.13892616087990173,
+        "reg_alpha": 1.2937634299875242,
+        "reg_lambda": 0.32956557375212814
+    },
+    "trial_1000": {
+        "n_estimators": 57,
+        "max_depth": 9,
+        "learning_rate": 0.25706263139613766,
+        "subsample": 0.5813034169798592,
+        "colsample_bytree": 0.7982750084702613,
+        "gamma": 0.15588566036077992,
+        "reg_alpha": 0.00467407123055151,
+        "reg_lambda": 2.4653773847803113
+    }
+}
