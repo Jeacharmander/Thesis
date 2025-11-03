@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #FFFFFF;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="MainPagesWidget">
+      <widget class="QWidget" name="SignInPage"/>
+      <widget class="QWidget" name="MainPage">
+       <property name="styleSheet">
+        <string notr="true">QWidget {
+    background-color: #FFFFFF;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="7,93">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="NavBar" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget#NavBar {
+    border-bottom: 1px solid #DDDDDD;
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0,0,0,0,0,0">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>30</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="SystemName">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    color: #2D7A6C;
+    font-weight: bold;
+    font-size: 22px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+ 
+    border-bottom: 3px solid transparent; 
+}</string>
+             </property>
+             <property name="text">
+              <string>Floai Health</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="DashboardButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: #2D7A6C;
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+    border-bottom: 3px solid transparent; 
+}
+
+QPushButton:hover {
+    color: #3EBBA5;
+}
+
+QPushButton:checked {
+    color: #2D7A6C;
+    border-bottom: 3px solid #2D7A6C; 
+}</string>
+             </property>
+             <property name="text">
+              <string>Dashboard</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="NavBarhorizontalSpacer1">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="AssessmentButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: #2D7A6C;
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+ 
+    border-bottom: 3px solid transparent; 
+}
+
+QPushButton:hover {
+    color: #3EBBA5;
+}
+
+QPushButton:checked {
+    color: #2D7A6C;
+    border-bottom: 3px solid #2D7A6C; 
+}</string>
+             </property>
+             <property name="text">
+              <string>Assessment</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="NavBarhorizontalSpacer2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="RecordsButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: #2D7A6C;
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+ 
+    border-bottom: 3px solid transparent; 
+}
+
+QPushButton:hover {
+    color: #3EBBA5;
+}
+
+QPushButton:checked {
+    color: #2D7A6C;
+    border-bottom: 3px solid #2D7A6C; 
+}</string>
+             </property>
+             <property name="text">
+              <string>Records</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="NavBarhorizontalSpacer3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SettingsButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    color: #2D7A6C;
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+ 
+    border-bottom: 3px solid transparent; 
+}
+
+QPushButton:hover {
+    color: #3EBBA5;
+}
+
+QPushButton:checked {
+    color: #2D7A6C;
+    border-bottom: 3px solid #2D7A6C; 
+}</string>
+             </property>
+             <property name="text">
+              <string>Settings</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="NavBarhorizontalSpacer4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QStackedWidget" name="StackedPages">
+          <widget class="QWidget" name="DashboardPage"/>
+          <widget class="QWidget" name="AssessmentPage">
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="6,94">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="CervicalCancerHeadlineWidget" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget#CervicalCancerHeadlineWidget {
+    border-bottom: 3px solid #DDDDDD;
+}</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="leftMargin">
+                <number>30</number>
+               </property>
+               <property name="rightMargin">
+                <number>30</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="CervicalCancerRiskAssessmentHeadlineLabel">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel {
+    color: #2D7A6C;
+    font-weight: bold;
+    font-size: 27px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+    border-bottom: 3px solid transparent; 
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Cervical Cancer Risk Assessment</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QStackedWidget" name="stackedWidget">
+              <widget class="QWidget" name="ClinicalHistoryPage">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_3" stretch="7,93">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="ClinicalHistoryHeadlineWidget" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="3,97">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>30</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>30</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="CircleClinicalHistoryHeadlineWidget" native="true">
+                     <property name="styleSheet">
+                      <string notr="true">QWidget {
+    /* 1. Force the widget's base size */
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    
+    /* 2. Apply the border and radius */
+    background-color: white;
+    border: 5px solid #3EBBA5; /* 5px teal border */
+    border-radius: 15px; /* This is (20 + 5*2) / 2 */
+}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="ClinicalHistoryHeadlineLabel">
+                     <property name="styleSheet">
+                      <string notr="true">QLabel {
+    color: #45B0A8;
+    font-weight: bold;
+    font-size: 22px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+    border-bottom: 3px solid transparent; 
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Clinical History</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QScrollArea" name="ClinicalHistoryScrollArea">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">/* === Main Window &amp; Scroll Area === */
+QScrollArea {
+    border: none;
+}
+
+/* === General Question Box Style === */
+/* This targets any QGroupBox whose name ENDS WITH &quot;GroupBox&quot; */
+QGroupBox[objectName$=&quot;GroupBox&quot;] {
+    background-color: #f7f7f7; /* Light grey background */
+    border-left: 4px solid #26a69a; /* Teal left border */
+    border-radius: 2px;
+    margin-bottom: 10px; /* Space between question boxes */
+    padding: 15px; /* Internal spacing */
+
+    /* These lines hide the other borders to blend in */
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* === General Question Label Style === */
+/* This targets any QLabel whose name ENDS WITH &quot;QuestionLabel&quot; */
+QLabel[objectName$=&quot;QuestionLabel&quot;] {
+    color: #00796B;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: transparent; /* Changed from f7f7f7 */
+    margin-bottom: 5px;
+}
+
+/* === General Radio Button Style === */
+/* This styles all QRadioButtons */
+QRadioButton {
+    font-size: 11pt;
+    color: #333333; /* Dark grey text */
+    spacing: 8px; /* Space between the circle and the text */
+    background-color: transparent; /* Changed from f7f7f7 */
+}
+
+/* This styles the round indicator itself */
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+}
+
+/* === General Text Input Style === */
+/* This targets any QLineEdit whose name ENDS WITH &quot;Textbox&quot; */
+QLineEdit[objectName$=&quot;Textbox&quot;] {
+    background-color: white;
+    border: 1px solid #2D7A6C; /* Teal border */
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 150px;
+}
+
+/* === Base Style (for BOTH buttons) === */
+/* Targets any QPushButton whose name starts with &quot;ClinicalHistory&quot; */
+QPushButton[objectName^=&quot;ClinicalHistory&quot;] {
+    /* Shape &amp; Size */
+    min-height: 35px; /* Set your desired height */
+    border-radius: 17px; /* This MUST be half of min-height */
+    border: none;
+    
+    /* Font */
+    font-size: 14px;
+    font-weight: bold;
+    
+    /* Spacing */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* === &quot;Get my results&quot; Button (Teal) === */
+QPushButton#ClinicalHistoryGetResultsButton {
+    background-color: #5BC8B6; /* Teal background */
+    color: white;
+}
+QPushButton#ClinicalHistoryGetResultsButton:hover {
+    background-color: #6ED4C4; /* Lighter teal */
+}
+QPushButton#ClinicalHistoryGetResultsButton:pressed {
+    background-color: #4AAE9E; /* Darker teal */
+}
+
+/* === &quot;Previous&quot; Button (Gray) === */
+QPushButton#ClinicalHistoryPreviousButton {
+    background-color: #B0B0B0; /* Gray background */
+    color: #2D7A6C; /* Dark teal text */
+}
+QPushButton#ClinicalHistoryPreviousButton:hover {
+    background-color: #C0C0C0; /* Lighter gray */
+}
+QPushButton#ClinicalHistoryPreviousButton:pressed {
+    background-color: #A0A0A0; /* Darker gray */
+}</string>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="ClinicalHistoryScrollAreaWidgetContents">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>1920</width>
+                     <height>854</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_5">
+                    <property name="spacing">
+                     <number>10</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>70</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>20</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>70</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>30</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="ClinicalHistoryDescriptionLabel">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+    font-size: 11pt;
+    color: #333333; /* Dark grey text, not pure black */
+    spacing: 8px;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>This sections is about human papillomavirus (HPV) infection, cervical screening status and whether the patient had the HPV vaccine. </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="ClinicalHistoryImportantRemindersWidget" native="true">
+                      <property name="styleSheet">
+                       <string notr="true">QWidget {
+    background-color: #F8FDFD; /* Very light blue/gray background */
+    border-top: 3px solid #B2EBF2; /* Thin light teal top border */
+    
+    /* These hide the other borders */
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    
+    padding: 15px; /* Adds space inside the box */
+}</string>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_19">
+                       <property name="leftMargin">
+                        <number>30</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>50</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>30</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>50</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="ClinicalHistoryMoreInfoLabel1">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+    color: #2D7A6C; /* Dark teal */
+    font-weight: bold;
+    font-size: 16px;
+    
+    /* Prevents inheriting the frame's style */
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>More information:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="ClinicalHistoryMoreInfoLabel2">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+    color: #333333; /* Standard dark gray text */
+    font-size: 13px;
+    
+    /* Prevents inheriting the frame's style */
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>For most individuals, being up to date with cervical screening means having had:
+a cervical screening test within the last 5 years
+
+A cervical screening test detects high-risk types of human papillomavirus (HPV) that can sometimes lead to cervical cancer. A Pap test, performed by a doctor or nurse practitioner, examines the cells of the cervix to identify abnormal changes that could potentially develop into cancer over time.
+For people with a weakened immune system — such as those living with HIV/AIDS or who have undergone an organ transplant — screening should be more frequent. Being up to date for these individuals means having had:
+a cervical screening test within the last 3 years</string>
+                         </property>
+                         <property name="wordWrap">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="ClinicalHistoryQ2GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <item>
+                        <widget class="QLabel" name="ClinicalHistoryQ1QuestionLabel">
+                         <property name="text">
+                          <string>Have you ever had a sexually transmitted infection (STI) (also known as STD)? </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="ClinicalHistoryQ1NoteLabel">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel {
+    color: #2D7A6C; /* Dark teal color */
+    font-style: italic;
+    font-size: 11pt; /* Adjust size as needed */
+    
+    /* This ensures it sits on the gray background */
+    background-color: transparent; 
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Examples include genital herpes, chlamydia and HIV/AIDS.</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="ClinicalHistoryQ1YesRadio">
+                         <property name="text">
+                          <string>Yes</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="ClinicalHistoryQ1NoRadio">
+                         <property name="text">
+                          <string>No</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="ClinicalHistoryQ3IDKRadio">
+                         <property name="text">
+                          <string>I don't know</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="ClinicalHistoryQ1GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_18">
+                       <item>
+                        <widget class="QLabel" name="ClinicalHistoryQ2QuestionLabel">
+                         <property name="text">
+                          <string>Are you up to date with your cervical screening?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="ClinicalHistoryQ2YesRadio">
+                         <property name="text">
+                          <string>Yes</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="ClinicalHistoryQ2NoRadio">
+                         <property name="text">
+                          <string>No</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="ClinicalHistoryQ2IDKRadio">
+                         <property name="text">
+                          <string>I don't know</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="ClinicalHistoryButton" native="true">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_6">
+                       <item>
+                        <widget class="QPushButton" name="ClinicalHistoryPreviousButton">
+                         <property name="text">
+                          <string>Previous</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="ClinicalHistoryHorizontalSpacer">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeType">
+                          <enum>QSizePolicy::Expanding</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>1200</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="ClinicalHistoryGetResultsButton">
+                         <property name="text">
+                          <string>Get my results</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="LifeStyleHabitsPage">
+               <layout class="QVBoxLayout" name="verticalLayout_8" stretch="7,93">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="LifeStyleHabitHeadlineWidget" native="true">
+                  <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,97">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>30</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>30</number>
+                   </property>
+                   <item>
+                    <widget class="QWidget" name="CircleLifeStyleHabitsWidget" native="true">
+                     <property name="styleSheet">
+                      <string notr="true">QWidget {
+    /* 1. Force the widget's base size */
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    
+    /* 2. Apply the border and radius */
+    background-color: white;
+    border: 5px solid #3EBBA5; /* 5px teal border */
+    border-radius: 15px; /* This is (20 + 5*2) / 2 */
+}</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="LifeStyleHabitsHeadlineLabel">
+                     <property name="styleSheet">
+                      <string notr="true">QLabel {
+    color: #45B0A8;
+    font-weight: bold;
+    font-size: 22px;
+    
+    border: none;
+    background-color: transparent;
+    
+    padding: 5px;
+    
+    border-bottom: 3px solid transparent; 
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Demographics and Lifestyle Habits</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QScrollArea" name="LifeStyleHabitsScrollArea">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">/* * This styles all QGroupBoxes. 
+ * If you only want to style your question boxes, 
+ * change &quot;QGroupBox&quot; to &quot;#questionBox1, #questionBox2&quot;
+ */
+QScrollArea{
+	border: none;
+}
+
+QGroupBox {
+    background-color: #f7f7f7; /* Light grey background */
+    border-left: 4px solid #26a69a; /* This is the teal left border */
+    border-radius: 2px;
+    margin-bottom: 10px; /* Adds space between your two question boxes */
+    padding: 15px; /* Internal spacing */
+
+    /* These lines hide the other borders to blend in */
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* This styles ONLY the labels with the objectName &quot;questionLabel&quot; */
+QLabel[objectName$=&quot;QuestionLabel&quot;] {
+    color: #00796B;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
+}
+/* This styles all QRadioButtons */
+QRadioButton {
+    font-size: 11pt;
+    color: #333333; /* Dark grey text, not pure black */
+    spacing: 8px;
+	background-color: #f7f7f7; /* Space between the round button and the text */
+}
+
+/* This styles the round indicator itself */
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+}
+
+/* === Base Style (for BOTH buttons) === */
+/* Targets any QPushButton whose name starts with &quot;LifeStyleHabits&quot; */
+QPushButton[objectName^=&quot;LifeStyleHabits&quot;] {
+    /* Shape &amp; Size */
+    min-height: 35px; /* Set your desired height */
+    border-radius: 17px; /* This must be half of min-height */
+    border: none;
+    
+    /* Font */
+    font-size: 14px;
+    font-weight: bold;
+    
+    /* Spacing */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* === &quot;Next&quot; Button (Teal) === */
+QPushButton#LifeStyleHabitsNextButton {
+    background-color: #5BC8B6; /* Teal background */
+    color: white;
+}
+QPushButton#LifeStyleHabitsNextButton:hover {
+    background-color: #6ED4C4; /* Lighter teal */
+}
+QPushButton#LifeStyleHabitsNextButton:pressed {
+    background-color: #4AAE9E; /* Darker teal */
+}
+
+/* === &quot;Previous&quot; Button (Gray) === */
+QPushButton#LifeStyleHabitsPreviousButton {
+    background-color: #B0B0B0; /* Gray background */
+    color: #2D7A6C; /* Dark teal text */
+}
+QPushButton#LifeStyleHabitsPreviousButton:hover {
+    background-color: #C0C0C0; /* Lighter gray */
+}
+QPushButton#LifeStyleHabitsPreviousButton:pressed {
+    background-color: #A0A0A0; /* Darker gray */
+}
+
+QGroupBox#DemographicsQuestionGroupBox {
+ background-color: #f7f7f7; /* Light grey background */
+    border-left: 4px solid #26a69a; /* This is the teal left border */
+    border-radius: 2px;
+    margin-bottom: 10px; /* Adds space between your two question boxes */
+    padding: 15px; /* Internal spacing */
+
+    /* These lines hide the other borders to blend in */
+    border-top: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* === The Question Text (QLabel) === */
+QLabel#DemographicsQuestionLabel {
+    color: #00796B;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
+}
+
+/* === The Input Box (QLineEdit) === */
+QLineEdit#DemographicsTextbox {
+    background-color: white;
+    border: 1px solid #2D7A6C; /* Teal border */
+    border-radius: 4px;
+    padding: 5px;
+    
+    max-width: 150px; 
+}</string>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAlwaysOff</enum>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="LifeStyleHabitsScrollAreaWidgetContents">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>-856</y>
+                     <width>1903</width>
+                     <height>1710</height>
+                    </rect>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <property name="spacing">
+                     <number>10</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>70</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>20</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>70</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>30</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="LifeStyleHabitsDescriptionLabel">
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+    font-size: 11pt;
+    color: #333333; /* Dark grey text, not pure black */
+    spacing: 8px;
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>This sections includes other risk factors, such as smoking history, childbirth, sexual contact and types of birth control, because they can affect the risk of developing cervical cancer. 
+*Some questions in this assessment may be personal or hard to answer. Answering these questions will help getting a more accurate estimate of risk for cervical cancer. </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="DemographicsQuestionGroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_7">
+                       <item>
+                        <widget class="QLabel" name="DemographicsQuestionLabel">
+                         <property name="text">
+                          <string>How old are you?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="DemographicsTextbox"/>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ1GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_10">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ1QuestionLabel">
+                         <property name="text">
+                          <string>Do you smoke Cigarettes?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ1YesRadio">
+                         <property name="text">
+                          <string>Yes</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ1NoRadio">
+                         <property name="text">
+                          <string>No</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ1QuitRadio">
+                         <property name="text">
+                          <string>I used to, but I quit</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ2GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_11">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ2QuestionLabel">
+                         <property name="text">
+                          <string>If yes, how many years have you been smoking?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ2LessThan1YearRadio">
+                         <property name="text">
+                          <string>less than a year</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ21YearRadio">
+                         <property name="text">
+                          <string>1 year</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ22YearsOrMoreRadio">
+                         <property name="text">
+                          <string>2 years or more</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ3GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_12">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ3QuestionLabel">
+                         <property name="text">
+                          <string>On average, how many packs of cigarettes do you smoke per year? </string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ3LessThan1PackRadio">
+                         <property name="text">
+                          <string>less than a pack</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ31PackRadio">
+                         <property name="text">
+                          <string>1 pack</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ32PacksOrMoreRadio">
+                         <property name="text">
+                          <string>2 packs or more</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ4GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_13">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ4QuestionLabel">
+                         <property name="text">
+                          <string>How many sexual partners have you had in your life?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ40Radio">
+                         <property name="text">
+                          <string>0</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ41Radio">
+                         <property name="text">
+                          <string>1</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ46OrMoreRadio">
+                         <property name="text">
+                          <string>2-5</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ42to5Radio">
+                         <property name="text">
+                          <string>6 or more</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ5GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_14">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ5QuestionLabel">
+                         <property name="text">
+                          <string>How old were you when you first had sexual contact?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ5YoungerThan16Radio">
+                         <property name="text">
+                          <string>Younger than 16</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ516OrOlderRadio">
+                         <property name="text">
+                          <string>16 or older</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ6GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_15">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ6QuestionLabel">
+                         <property name="text">
+                          <string>How many times have you given birth?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ6NeverRadio">
+                         <property name="text">
+                          <string>Never</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ6OnceRadio">
+                         <property name="text">
+                          <string>Once</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ63OrMoreRadio">
+                         <property name="text">
+                          <string>Twice</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ6TwiceRadio">
+                         <property name="text">
+                          <string>3 or more times</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ6MoreInfoLabel">
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{
+    color: #4A4A4A; /* Dark gray */
+    font-size: 13px;
+    font-style: italic;
+	background-color: #f7f7f7;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Note: Having more than 1 baby at a time, such as delivering twins or triplets, counts as giving birth once. Include both vaginal and Cesarean/C-section births.</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ7GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_16">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ7QuestionLabel">
+                         <property name="text">
+                          <string>Have you ever used hormonal contraceptives (such as birth control pills, injections, or implants?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ7YesRadio">
+                         <property name="text">
+                          <string>Yes</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ7NoRadio">
+                         <property name="text">
+                          <string>No</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QGroupBox" name="LifeStyleHabitQ8GroupBox">
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_17">
+                       <item>
+                        <widget class="QLabel" name="LifeStyleHabitQ8QuestionLabel">
+                         <property name="text">
+                          <string>If yes, for how many years have you used hormonal contraceptives in total?</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ8LessThan1YearRadio">
+                         <property name="text">
+                          <string>Less than a year</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ81YearRadio">
+                         <property name="text">
+                          <string>1 year</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QRadioButton" name="LifeStyleHabitQ82YearsOrMoreRadio">
+                         <property name="text">
+                          <string>2 years or more</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="LifeStyleHabitContiueButtonsWidget" native="true">
+                      <layout class="QHBoxLayout" name="horizontalLayout_4">
+                       <item>
+                        <widget class="QPushButton" name="LifeStyleHabitsPreviousButton">
+                         <property name="text">
+                          <string>Previous</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="LifeStyleHabitsButtonHorizontalSpacer">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeType">
+                          <enum>QSizePolicy::Fixed</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>1200</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="LifeStyleHabitsNextButton">
+                         <property name="text">
+                          <string>Next</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="FirstAssessmentPage">
+               <property name="styleSheet">
+                <string notr="true">QWidget {
+    background-color: #f5f5f5;
+}</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="RecordsPage"/>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
