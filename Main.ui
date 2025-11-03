@@ -391,6 +391,11 @@ QPushButton:checked {
             </item>
             <item>
              <widget class="QStackedWidget" name="stackedWidget">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+background-color: #white;
+}</string>
+              </property>
               <widget class="QWidget" name="ClinicalHistoryPage">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1060,7 +1065,7 @@ QLineEdit#DemographicsTextbox {
                    <property name="geometry">
                     <rect>
                      <x>0</x>
-                     <y>-856</y>
+                     <y>0</y>
                      <width>1903</width>
                      <height>1710</height>
                     </rect>
@@ -1442,7 +1447,7 @@ QLineEdit#DemographicsTextbox {
                           <enum>Qt::Horizontal</enum>
                          </property>
                          <property name="sizeType">
-                          <enum>QSizePolicy::Fixed</enum>
+                          <enum>QSizePolicy::Expanding</enum>
                          </property>
                          <property name="sizeHint" stdset="0">
                           <size>
@@ -1470,10 +1475,212 @@ QLineEdit#DemographicsTextbox {
               </widget>
               <widget class="QWidget" name="FirstAssessmentPage">
                <property name="styleSheet">
-                <string notr="true">QWidget {
-    background-color: #f5f5f5;
+                <string notr="true">QWidget#FirstAssessmentPage {
+    background-color: #F8F8F8;
 }</string>
                </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_8">
+                <property name="topMargin">
+                 <number>200</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>200</number>
+                </property>
+                <item>
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QWidget" name="FirstAssessmentCardWidget" native="true">
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QWidget#widget {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 600px;
+    
+    /* ADD THIS LINE: */
+    border: 1px solid black; 
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_21">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>10</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="HowDoesTheAssessmentWorksInfoLabel">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel {
+    color: #2D7A6C;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background-color: transparent; 
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>How does the assessment works?</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="StartAssessmentInfoLabel">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QLabel {
+    font-size: 11pt;
+    color: #333333; /* Dark gray */
+    margin-bottom: 10px;
+    background-color: transparent; 
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>The assessment will include a series of questions about your demographic background, lifestyle habits, and medical history, as these factors can influence the  risk for cervical cancer.
+
+Please note that your risk level may change over time as health or habits change. It is  recommended to reassess periodically to stay informed about any updates in the risk profile.
+
+
+⚠️ Important: This assessment is not a diagnostic tool. It is designed to help understand the relevant risk and encourage preventive health practices and early screening.</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="wordWrap">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="StartAssessmentWidget" native="true">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QWidget{
+	background-color: white;
+	border: none;
+}</string>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,0,1">
+                      <item>
+                       <spacer name="StartAssessmentButtonHorizontalSpacer">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="StartAssessmentButton">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton {
+    background-color: #5BC8B6; /* Teal color */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    
+    /* --- Pill Shape --- */
+    min-height: 40px;
+    border-radius: 20px; /* Half of min-height */
+    /* ------------------- */
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+QPushButton:hover {
+    background-color: #6ED4C4;
+}
+
+QPushButton:pressed {
+    background-color: #4AAE9E;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>START ASSESSMENT</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="StartAssessmentButton_2">
+                        <property name="orientation">
+                         <enum>Qt::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>40</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </widget>
              </widget>
             </item>
