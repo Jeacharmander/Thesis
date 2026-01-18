@@ -1389,6 +1389,9 @@ Examples include genital herpes, chlamydia and HIV/AIDS.</string>
                    <property name="leftMargin">
                     <number>30</number>
                    </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
                    <property name="rightMargin">
                     <number>30</number>
                    </property>
@@ -2094,27 +2097,55 @@ However, maintaining regular cervical screening and healthy lifestyle practices 
                        </widget>
                       </item>
                       <item>
-                       <spacer name="verticalSpacer_2">
-                        <property name="orientation">
-                         <enum>Qt::Vertical</enum>
-                        </property>
-                        <property name="sizeType">
-                         <enum>QSizePolicy::Fixed</enum>
-                        </property>
-                        <property name="sizeHint" stdset="0">
-                         <size>
-                          <width>500</width>
-                          <height>300</height>
-                         </size>
-                        </property>
-                       </spacer>
+                       <widget class="QWidget" name="RecommendationsWidgetContainer" native="true">
+                        <layout class="QVBoxLayout" name="verticalLayout_25" stretch="10,90">
+                         <item>
+                          <widget class="QLabel" name="RecommendationsLabel">
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    color: #555555;
+    font-weight: bold;
+    font-size: 15pt;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>💡 Recommendations:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="RecommendationsContents">
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+    color: #333333; /* Standard dark gray text */
+    font-size: 11pt;
+    
+    /* These prevent it from getting a weird background or border */
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    
+    /* This adds the space between the two paragraphs */
+    margin-bottom: 10px; 
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Continue regular cervical screening as recommended for your age group.
+Maintain healthy lifestyle choices, including avoiding tobacco and practicing safe sex.
+Stay aware of any changes in your reproductive or general health.
+Schedule routine checkups with your healthcare provider.</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
                       </item>
                      </layout>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QWidget" name="RecommendationsWidget" native="true">
-                     <layout class="QVBoxLayout" name="verticalLayout_24" stretch="50,50">
+                    <widget class="QWidget" name="MainFactorsWidgetContainer" native="true">
+                     <layout class="QVBoxLayout" name="verticalLayout_24" stretch="0">
                       <property name="spacing">
                        <number>0</number>
                       </property>
@@ -2131,128 +2162,36 @@ However, maintaining regular cervical screening and healthy lifestyle practices 
                        <number>0</number>
                       </property>
                       <item>
-                       <widget class="QWidget" name="FactorsResultsWidget" native="true">
-                        <layout class="QVBoxLayout" name="verticalLayout_25">
+                       <widget class="QWidget" name="widget" native="true">
+                        <layout class="QVBoxLayout" name="verticalLayout_26" stretch="10,90">
                          <item>
-                          <widget class="QLabel" name="FactorsResultsTitleLabel">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLabel {
-    color: #333333;
+                          <widget class="QWidget" name="MainFactorsLabelContainer" native="true">
+                           <layout class="QVBoxLayout" name="verticalLayout_31">
+                            <property name="leftMargin">
+                             <number>20</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>20</number>
+                            </property>
+                            <item>
+                             <widget class="QLabel" name="MainFactorsLabel">
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+    color: #555555;
     font-weight: bold;
-    font-size: 13pt;
-    margin-bottom: 10px;
-    background-color: none;
-	border: none;
+    font-size: 15pt;
 }</string>
-                           </property>
-                           <property name="text">
-                            <string>🛡️ Main factors keeping your risk Low:</string>
-                           </property>
+                              </property>
+                              <property name="text">
+                               <string>Main factors keeping your risk Low:</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLabel" name="FactorsResultsLabel">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLabel {
-    color: #333333;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    background-color: none;
-	border: none;
-
-    font-size: 11pt;
-    color: #333333; /* Dark grey text, not pure black */
-    spacing: 8px;
-}</string>
-                           </property>
-                           <property name="text">
-                            <string>You are up to date with your cervical screening.
-You do not smoke cigarettes.
-You have been vaccinated against HPV.
-You practice safe sexual health (e.g., using condoms, limiting number of partners).
-You have no history of high-risk HPV infection or sexually transmitted infections.</string>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QWidget" name="RecommendationsWidget2" native="true">
-                        <property name="styleSheet">
-                         <string notr="true">QWidget {
-    background-color: #F0F7FF; /* Very light blue */
-    border: 1px solid #D0E7FF; /* Light blue border */
-    border-left: 5px solid #4A90E2; /* Darker blue left border */
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 20px;
-}</string>
-                        </property>
-                        <layout class="QVBoxLayout" name="verticalLayout_26">
-                         <item>
-                          <widget class="QLabel" name="RecommendationsTitleLabel">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLabel {
-    color: #333333;
-    font-weight: bold;
-    font-size: 13pt;
-    margin-bottom: 10px;
-    background-color: none;
-	border: none;
-}</string>
-                           </property>
-                           <property name="text">
-                            <string>💡 Recommendations:</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QLabel" name="RecommendationsLabel">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLabel {
-    color: #333333;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    background-color: none;
-	border: none;
-
-    font-size: 11pt;
-    color: #333333; /* Dark grey text, not pure black */
-    spacing: 8px;
-}</string>
-                           </property>
-                           <property name="text">
-                            <string>Continue regular cervical screening as recommended for your age group.
-Maintain healthy lifestyle choices, including avoiding tobacco and practicing safe sex.
-Stay aware of any changes in your reproductive or general health.
-Schedule routine checkups with your healthcare provider.</string>
-                           </property>
-                          </widget>
+                          <widget class="QWidget" name="MainFactosGraphCWidgetContainer" native="true"/>
                          </item>
                         </layout>
                        </widget>
